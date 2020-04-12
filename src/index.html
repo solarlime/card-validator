@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card validator</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Card validator</h1>
+    </header>
+    <div class="form-container">
+        <form id="form">
+            <label for="input">
+                Here you can find out:
+                <ul>
+                    <li>the payment system</li>
+                    <li>is the card valid</li>
+                </ul>
+            </label>
+            <input type="text" id="input" placeholder="Input the card number">
+            <button class="button" type="button">Check</button>
+        </form>
+    </div>
+    <div class="card-container">
+        <img src="img/visa.png" class="card" alt="Visa" data-name="Visa">
+        <img src="img/mastercard.png" class="card" alt="MasterCard" data-name="MasterCard">
+        <img src="img/mir.png" class="card" alt="MIR" data-name="MIR">
+        <img src="img/jcb.png" class="card" alt="JCB" data-name="JCB">
+        <img src="img/diners_club.png" class="card" alt="Diners Club" data-name="Diners Club">
+        <img src="img/discover.png" class="card" alt="Discover" data-name="Discover">
+        <img src="img/american_express.png" class="card" alt="American Express" data-name="American Express">
+    </div>
+    <p class="answer"></p>
+</body>
+</html>
