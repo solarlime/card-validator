@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest",
+    "test": "jest --testPathPattern=./src/",
+    "coverage": "jest --testPathPattern=./src/ --coverage",
+    "e2e": "jest --testPathPattern=./e2e/",
     "lint": "eslint ."
   },
   "repository": {
@@ -32,6 +34,7 @@
     "file-loader": "^5.1.0",
     "html-loader": "^0.5.5",
     "jest": "^25.1.0",
+    "puppeteer": "^2.1.1",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
