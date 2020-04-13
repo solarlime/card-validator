@@ -8,17 +8,15 @@ branches:
 cache: node_modules
 # установка зависимостей
 install:
-  - yarn install
+  - npm install
+  -
 build: off
 # сборка
 build_script:
   - yarn run build
 # скрипт тестирования
 test_script:
-  - yarn run start &
-  - export PID=$!
-  - sleep 10
-  - kill -9 $PID
+  - yarn run lint && yarn run test
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
