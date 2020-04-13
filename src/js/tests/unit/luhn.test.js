@@ -1,4 +1,4 @@
-import luhnAlgorithm from '../luhn';
+import luhnAlgorithm from '../../luhn';
 
 test.each([
   ['Valid card', '4276010021346554', true],

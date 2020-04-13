@@ -1,4 +1,4 @@
-import getPaymentSystem from '../paySystem';
+import getPaymentSystem from '../../paySystem';
 
 test.each([
   ['Visa', '4276010021346554', 'Visa'],
