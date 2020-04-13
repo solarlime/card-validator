@@ -1,20 +1,24 @@
 image: Ubuntu1804 # образ для сборки
 stack: node 10 # окружение
+# ветка git
 branches:
   only:
     - master
-# ветка git
+# кеширование
 cache: node_modules
+# установка зависимостей
 install:
   - yarn install
 build: off
-# кеширование
-# команда установки зависимостей
+# сборка
 build_script:
   - yarn run build
-# команда сборки
+# скрипт тестирования
 test_script:
-  - yarn run lint && yarn run test # скрипт тестирования
+  - yarn run start &
+  - export PID=$!
+  - sleep 10
+  - kill -9 $PID
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
