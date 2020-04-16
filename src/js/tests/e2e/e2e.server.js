@@ -1,6 +1,6 @@
-import webpack from 'webpack';
-import WebpackDevServer from 'webpack-dev-server';
-import config from '../../../../webpack.common';
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const config = require('../../../../webpack.common');
 
 const server = new WebpackDevServer(webpack(config), {});
 server.listen(9000, 'localhost', (err) => {
