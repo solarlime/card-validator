@@ -1,5 +1,5 @@
 {
-  "name": "ahj-homework-4",
+  "name": "card-validator",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solarlime/ahj-homework-4.git"
+    "url": "git+https://github.com/solarlime/card-validator.git"
   },
   "author": "solarlime",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/solarlime/ahj-homework-4/issues"
+    "url": "https://github.com/solarlime/card-validator/issues"
   },
-  "homepage": "https://github.com/solarlime/ahj-homework-4#readme",
+  "homepage": "https://github.com/solarlime/card-validator#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
