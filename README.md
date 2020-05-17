@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/2t0fw5uj17xuccgx?svg=true)](https://ci.appveyor.com/project/solarlime/ahj-homework-4)
+[![Build status](https://ci.appveyor.com/api/projects/status/gbc0o66al0x7nq8r?svg=true)](https://ci.appveyor.com/project/solarlime/card-validator)
 
 # Card validator
 
@@ -16,4 +16,4 @@ Sample cards:
 - American Express: 371758885524003
 - China UnionPay (as another payment system): 6226806064650273
 
-Try it on [GitHub Pages](https://solarlime.github.io/ahj-homework-4/)!
+Try it on [GitHub Pages](https://solarlime.github.io/card-validator/)!
